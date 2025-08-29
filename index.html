@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage with Flexbox & Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Responsive Website</h1>
+            <p>Using Flexbox and Grid Layouts</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-container">
+        <main class="main-content">
+            <section class="intro">
+                <h2>Welcome to Our Website</h2>
+                <p>This page demonstrates responsive design using both Flexbox and CSS Grid layouts.</p>
+            </section>
+
+            <section class="features">
+                <h2>Featured Services</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Web Design</h3>
+                        <p>Custom responsive designs that look great on all devices.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Development</h3>
+                        <p>Clean, efficient code built with modern standards.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>SEO Optimization</h3>
+                        <p>Improve your visibility in search engine results.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Content Strategy</h3>
+                        <p>Create engaging content that connects with your audience.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonial-flex">
+                    <div class="testimonial">
+                        <p>"They delivered an amazing website that exceeded our expectations!"</p>
+                        <cite>- Delview Enterpreneurs</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The team was professional and delivered on time and on budget."</p>
+                        <cite>- Trans Business Machines</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Our traffic increased by 150% after implementing their SEO suggestions."</p>
+                        <cite>- Kokalta Technologies</cite>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>Latest News</h3>
+                <p>Stay updated with our latest offers and industry news.</p>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Subscribe</h3>
+                <p>Join our newsletter for tips and updates.</p>
+                <form>
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Responsive Web Design. All rights reserved.</p>
+            <p>Created with Flexbox and Grid layout techniques.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
